@@ -1,0 +1,101 @@
+@media (max-width: 587px) {
+    
+    html,
+    body {
+        background-repeat: repeat-y;
+    }
+    
+    .contact-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 10px;
+        overflow: hidden;
+    }
+
+    .my-info {
+        padding: 12px;
+        height: 400px;
+        width: 260px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    
+    .contact-me {
+        background-color: transparent;
+    }
+
+    .user-info {
+        width: 260px;
+        height: 400px;
+        padding: 24px 12px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: none;
+        margin-bottom: 50px;
+    }
+    
+    .f-class textarea {
+        padding: 4px;
+        margin: 0px;
+        height: 180px;
+        width: 200px;
+    }
+
+    .sbtn button {
+        padding: 4px;
+        margin: 5px 10px;
+    }
+}
+
+@media (min-width: 588px) and (max-width:768px) {
+    html,
+    body {
+        background-repeat: repeat-y;
+    }
+    
+    .contact-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 10px;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+    .my-info {
+        padding: 16px;
+        height: 400px;
+        width: 260px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    
+    .contact-me {
+        background-color: transparent;
+    }
+
+    .user-info {
+        width: 260px;
+        height: 400px;
+        padding: 16px;
+        box-shadow: none;
+        margin-bottom: 0px;
+    }
+    
+    .f-class textarea {
+        padding: 4px;
+        margin: 0px;
+        height: 180px;
+        width: 200px;
+    }
+
+    .sbtn button {
+        padding: 4px;
+        margin: 5px 10px;
+    }
+}

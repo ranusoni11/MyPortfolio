@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: rgb(233, 171, 219);
+    background: linear-gradient(45deg, rgba(233, 171, 219, 1) 0%, rgba(0, 9, 85, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+}
+
+.nav-bar li{
+    list-style: none;
+    font-size: large;
+    color: #ffffff;
+}
+
+.nav-bar li a{
+    font-size: 12px;
+    font-family: "Seymour One", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    color: #bcafe6;
+    cursor: pointer;
+}
+
+.pro-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pro-img img {
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#a-sec-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 24px 36px;
+}
+
+.about-card-body {
+    width: 60%;
+    border-radius: 50px;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.about-card-body::before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(rgba(255, 255, 255), transparent, transparent);
+    height: 60vh;
+    width: 80vw;
+    top: var(--y);
+    left: var(--x);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.5s, top 0s, left 0s;
+    z-index: -2;
+}
+
+.about-card-body:hover::before {
+    opacity: 1;
+}
+
+.about-card-body::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: rgb(233, 171, 219);
+    background: linear-gradient(45deg, rgba(233, 171, 219, 0.5) 0%, rgba(0, 9, 85, 0.8) 100%);
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.br-animation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bord {
+    width: 6px;
+    height: 6px;
+    border: 4px double #243491;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0px 2px;
+}
+
+.my-image{
+    position: relative;
+}
+
+.my-image img {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.my-image::after {
+    content: "";
+    position: absolute;
+    background-image: url('/Images/About_Me__1_-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    transition: 0.2s ease;
+}
+
+.my-image:hover::after{
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+.about-me{
+    display: flex;
+    height: 40%;
+    overflow: hidden;
+    padding: 24px;
+}
+
+.animation-body {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation: animation 10s linear infinite;
+}
+
+.rotateby {
+    background: linear-gradient(45deg, #d4d4d4, #ffffff, #d4d4d4, #bbbbbb);
+    padding: 4px;
+    margin: 3px 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation-play-state: running;
+    transition: all ease 1s;
+    transform: rotateY(-30deg) rotateX(15deg);
+}
+
+.rotateby::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -1px;
+    height: 50px;
+    width: 40px;
+    border-bottom-right-radius: 50%;
+    background: transparent;
+    box-shadow: 0 20px 0 0 #bbbbbb;
+}
+
+.rotateby:hover {
+    animation-play-state: paused;
+    transform: scale(1.1, 1.1) rotateY(0deg);
+}
+
+.animation-body:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animation {
+    from {
+        transform: translateY(120%);
+    }
+
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+.lables {
+    font-size: 24px;
+    color: rgba(0, 9, 85, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 4px;
+}
+
+.p-utilit {
+    font-family: "League Spartan", sans-serif;
+    /* font-family: "Jersey 15 Charted", sans-serif; */
+    font-size: 18px;
+    color: rgb(65, 63, 63);
+    padding: 8px 4px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 18px;
+}
+
+.p-utilit a {
+    color: #243491;
+    text-decoration: none;
+}
+
+.p-utilit a:hover {
+    cursor: pointer;
+}

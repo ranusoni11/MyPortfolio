@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.calculator{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-body {
+    height: 500px;
+    width: 330px;
+    border: 4px double rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(111deg, rgba(64,36,68,1) 0%, rgba(107,107,107,1) 50%, rgba(47,46,47,1) 100%);
+}
+
+.spcial-btn{
+    color: silver;
+    font-weight: lighter;
+}
+input {
+    width: 325px;
+    height: 100px;
+    text-align: right;
+    border: 2px groove black;
+    color: antiquewhite;
+    border-radius: 15px;
+    border-bottom: 4px double antiquewhite;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+}
+
+input[type="text"] {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+}
+
+.cal-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    /* border: 1px groove antiquewhite; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 290px;
+}
+
+.btn-col{
+    display: flex;
+    flex-direction: row;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    width: 73px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    opacity: 0.7;
+    color: rgb(255, 255, 255, 0.6);
+    /* color: rgb(70, 70, 70); */
+}
+
+@media (max-width: 768px) {
+ 
+    .cal-body {
+        height: 500px;
+        width: 305px;
+    }
+    
+    input {
+        width: 300px;
+        height: 100px;
+    }
+    
+    button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 73px;
+        width: 73px;
+        background-color: transparent;
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+        font-weight: bolder;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: light;
+        border: none;
+    }
+    
+}

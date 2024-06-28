@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranu Soni - My Portfolio-About</title>
+    <link rel="shortcut icon" href="/Images/IMG_20221105_234653-fotor-ai-art-effects-20240608225157-removebg-preview.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/CssStyles/About.css">
+    <link rel="stylesheet" href="/responsiveCssStyle/R-768-about.css">
+    <link rel="stylesheet" href="/responsiveCssStyle/R-1024-about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15+Charted&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=League+Spartan:wght@100..900&family=Merienda:wght@300..900&family=Permanent+Marker&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let card = document.querySelector(".about-card-body");
+
+            card.addEventListener('mousemove', function (event) {
+                let rect = card.getBoundingClientRect();
+                let x = event.clientX - rect.left;
+                let y = event.clientY - rect.top;
+                console.log(`x: ${x}, y: ${y}`);
+
+                card.style.setProperty('--x', x + 'px');
+                card.style.setProperty('--y', y + 'px');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar" id="nav">
+            <div class="pro-img">
+                <img src="/Images/finalLogo.png" alt="mp">
+                <li class="different-nav">&#x2022;&nbsp;<a href="/HtmlPages/index.html">Home</a></li>
+            </div>
+        </div>
+    </header>
+    <main id="a-sec-1">
+        <div class="about-card-body">
+            <div class="my-image">
+                <img src="/Images/About_Me__1_-removebg-preview.png" alt="">
+            </div>
+            <div class="about-me">
+                <div class="animation-body">
+
+                    <div class="my-name rotateby">
+                        <div class="br-animation">
+                            <div class="bord"></div>
+                            <label class="lables" for="about">Name ~ </label>
+                        </div>
+                        <p class="p-utilit">- Ranu Soni</p>
+                    </div>
+
+                    <div class="post rotateby">
+                        <div class="br-animation">
+                            <div class="bord"></div>
+                            <label class="lables" for="post">Web Developer ~ </label>
+                        </div>
+
+                        <div class="discription">
+                            <p class="p-utilit">-I am a passionate web developer with beginner-level experience in web
+                                development.
+                                I specialize in creating dynamic and responsive web applications using the latest
+                                technologies.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education rotateby">
+                        <div class="br-animation">
+                            <div class="bord"></div>
+                            <label class="lables" for="edu">Education ~ </label>
+                        </div>
+                        <p class="p-utilit">-Bachelor of Technology(B.Tech) &#x2022; Computer Science &#x2022;
+                            University
+                            Collage of
+                            Engineering
+                            and Technology(UCET) &#x2022; Duration(2021 - 2025)<br><br>Current Status<br>
+                            <b><i>3<sup>rd</sup>Year &#x2022;
+                                    &#8549;<sup>th</sup>Semester</i></b>
+                        </p>
+                    </div>
+
+                    <div class="working rotateby">
+                        <div class="br-animation">
+                            <div class="bord"></div>
+                            <label class="lables" for="edu">Working ~ </label>
+                        </div>
+                        <p class="p-utilit">
+                            -I am currently working with<br><a href="https://www.codsoft.in" target="_blank">@CodSoft
+                            </a>
+                            &#x2022; intern
+                            <br><br>
+                            Internship Duration<br>
+                            <b><i>1<sup>st</sup>Jun - 30<sup>th</sup>Jun</i></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="/Scripts/vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector(".about-card-body"), {
+        max: 5,
+        speed: 100
+    });
+</script>
+
+</html>

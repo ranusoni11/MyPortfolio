@@ -1,0 +1,125 @@
+@media (max-width: 912px) {
+
+    .pro-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: first baseline;
+    }
+
+    .card-css {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 5px;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+    }
+
+    .thumbnail {
+        padding: 8px;
+    }
+
+    .thumbnail img {
+        height: auto;
+        width: 280px;
+        padding: 4px 0px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        /* align-items: flex-start; */
+        /* padding: 8px 4px; */
+        /* border: 1px solid white; */
+    }
+
+    .for-h {
+        font-size: 24px;
+        font-family: "League Spartan", sans-serif;
+        color: #1b1a28;
+        padding: 4px 2px;
+        margin-bottom: 6px;
+    }
+
+    .title {
+        padding: 4px 8px;
+        margin: 5px auto;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 4px 6px;
+    }
+
+    .p-utilit {
+        font-family: "League Spartan", sans-serif;
+        /* font-family: "Jersey 15 Charted", sans-serif; */
+        margin-left: 10px;
+        font-size: 18px;
+        color: rgb(14, 7, 48);
+        padding: 8px 4px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 18px;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 20px;
+    }
+
+    .status {
+        color: rgb(1, 93, 1);
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .built {
+        color: rgb(74, 38, 165);
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .link-btn button {
+        width: 250px;
+        background-color: #d1d1d1;
+        color: #1b1a28;
+        padding: 10px 20px;
+        margin: 10px 5px;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Seymour One", sans-serif;
+        border: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        transition: background-color 0.3s;
+    }
+
+    .link-btn button:hover {
+        cursor: pointer;
+        opacity: 0.89;
+    }
+
+    .link-btn i {
+        font-size: 14px;
+        margin: 0px 4px;
+    }
+}

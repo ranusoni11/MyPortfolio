@@ -1,0 +1,48 @@
+@media (min-width: 769px) and (max-width: 1320px) {
+
+    #a-sec-1 {
+        background: rgb(233, 171, 219);
+        background: linear-gradient(45deg, rgba(233, 171, 219, 1) 0%, rgba(0, 9, 85, 1) 100%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    .about-card-body {
+        width: 100%;
+        padding: 14px;
+        margin: 15px;
+        justify-content: center;
+
+    }
+
+    .about-me {
+        display: flex;
+        height: 40%;
+        overflow: hidden;
+        padding: 12px;
+        margin-top: 15px;
+    }
+
+    .animation-body {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        animation: animation 10s linear infinite;
+    }
+
+    @keyframes animation {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(-220%);
+        }
+    }
+}

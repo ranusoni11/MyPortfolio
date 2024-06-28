@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: rgb(233, 171, 219);
+    background: linear-gradient(45deg, rgba(233, 171, 219, 1) 0%, rgba(0, 9, 85, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner i {
+    font-size: 3rem;
+    color: #333;
+}
+
+.body-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-content{
+    display: none;
+}
+
+.bc-animation {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* pointer-events: none; */
+}
+
+.round {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: animate 8s linear infinite, ani-2 2s linear infinite;
+}
+
+.round:nth-child(1) {
+    left: 5%;
+    animation-delay: 0.5s;
+}
+
+.round:nth-child(2) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.round:nth-child(3) {
+    left: 88%;
+    animation-delay: 1.5s;
+}
+
+.round:nth-child(4) {
+    left: 18%;
+    animation-delay: 2s;
+}
+
+.round:nth-child(5) {
+    left: 90%;
+    animation-delay: 2.5s;
+}
+
+.round:nth-child(6) {
+    left: 52%;
+    animation-delay: 3s;
+}
+
+.round:nth-child(7) {
+    left: 65%;
+    animation-delay: 3.5s;
+}
+
+.round:nth-child(8) {
+    left: 35%;
+    animation-delay: 4s;
+}
+
+.round:nth-child(9) {
+    left: 85%;
+    animation-delay: 4.5s;
+}
+
+.round:nth-child(10) {
+    left: 45%;
+    animation-delay: 5s;
+}
+
+.round:nth-child(11) {
+    left: 36%;
+    animation-delay: 5.5s;
+}
+
+.round:nth-child(12) {
+    left: 72%;
+    animation-delay: 6s;
+}
+
+.round:nth-child(13) {
+    left: 14%;
+    animation-delay: 6.5s;
+}
+
+.round:nth-child(14) {
+    left: 70%;
+    animation-delay: 7s;
+}
+
+@keyframes animate {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    20% {
+        top: 20%;
+        opacity: 0.8;
+    }
+
+    40% {
+        top: 40%;
+        opacity: 0.6;
+    }
+
+    60% {
+        top: 60%;
+        opacity: 0.4;
+    }
+
+    80% {
+        top: 80%;
+        opacity: 0.2;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes ani-2 {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+}
+
+.pro-img img {
+    width: 180px;
+    height: 60px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    margin-bottom: 2px;
+    transition: all ease 2s;
+}
+
+.pro-img img:hover {
+    cursor: pointer;
+    transform: scale(1.4) translateZ(50px);
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-ele {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-ele a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.nav-ele li i{
+    display: none;
+}
+
+.nav-bar li {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 5px 10px;
+    font-family: "Seymour One", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    list-style: none;
+}
+
+.nav-bar li:hover {
+    color: #bcafe6;
+    cursor: pointer;
+}
+
+.heading{
+    display: none;
+}
+
+.different-nav {
+    border: none;
+    position: relative;
+}
+
+.different-nav::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 186, 237, 1) 0%, rgba(207, 207, 207, 1) 100%);
+    transition: all ease-in-out .4s;
+}
+
+.different-nav:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.front-panal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text-content h1 {
+    font-family: "Merienda", cursive;
+    font-weight: 900;
+    padding: 4px;
+    font-size: 42px;
+    color: #000955;
+}
+
+.text-content h4 {
+    padding: 2px;
+    font-size: 32px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    color: #22253f;
+    margin-bottom: 50px;
+}
+
+.text-content p {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    padding: 4px;
+    font-size: 26px;
+    color: #000a1f;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.my-image {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.my-image img {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    position: relative;
+    margin-left: 15px;
+}
+
+.my-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.my-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.my-image::after,
+.my-image::before,
+.my-image .third-border {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.my-image::after {
+    border-top: 10px solid #000a1f;
+    border-right: 10px solid #1f0017;
+    animation: rotate-1 6s linear infinite;
+}
+
+.my-image::before {
+    border-bottom: 10px solid #f1bbe2;
+    border-left: 10px solid #f1bbe2;
+    animation: rotate-2 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.my-image .third-border {
+    border-bottom: 10px solid #34c6eb;
+    border-right: 10px solid #34c6eb;
+    animation: rotate-3 6s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes rotate-1 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-2 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-3 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 4px;
+    width: 100%;
+}
+
+.background {
+    color: #000a1f;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 4px;
+    width: 150px;
+}
+
+.box-utliti {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+}
+
+.numbers-utilit {
+    font-family: "League Spartan", sans-serif;
+    align-content: center;
+    font-size: 28px;
+    color: whitesmoke;
+    padding: 12px 1px;
+}
+
+.different {
+    border: none;
+    position: relative;
+}
+
+.different::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: #000a1f;
+    transition: all ease-in-out .4s;
+}
+
+.different:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 0px;
+    background-color: transparent;
+}
+
+#year{
+    margin: 0px 4px;
+}
